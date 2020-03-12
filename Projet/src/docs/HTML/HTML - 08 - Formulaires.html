@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+
+        </nav>
+    </header>
+    <section>
+        <article>
+            <form action="Formulaire" method="POST" id="formulaire_contact">
+                <p>*Ces zones sont obligatoires</p>
+                <fieldset>
+                    <legend>Vos cordonnées</legend>
+                    <label for="nom">nom* : </label><input type="text" name="nom" id="Nom" required><br>
+                    <label for="prenom">prenom* : </label><input type="text" name="prenom" id="Prenom" required><br><br>
+                    <label for="Sexe" required>Sexe* :</label><br><br>
+                    <label for="Féminin"></label><input type="radio" name="Sexe" id="Féminin" checked>Féminin
+                    <label for="Masculin"></label><input type="radio" name="Sexe" id="Masculin">Masculin<br>
+                    <label for="Datedenaissance">Date de naissance* : </label><input type="date"
+                        name="date_de_naissance" id="Date" required><br>
+                    <label for="Code_Postal">Code Postal : </label><input type="text" name="Code_postale"
+                        id="Code_Postal"><br>
+                    <label for="Adresse">Adresse : </label><input type="text" name="Adresse" id="Adresse"><br>
+                    <label for="Ville">Ville : </label><input type="text" name="Ville" id="Ville"><br>
+                    <label for="Email">Email* : </label><input type="email" name="Email" id="Email" required
+                        placeholder="dave.loper@afpa.fr"><br>
+                </fieldset>
+                <fieldset>
+                    <legend>Votre demande</legend>
+                    <label for="Sujet" required>Sujet* : </label>
+                    <select name="Sujet" id="Sujet">
+                        <option value="Mescommandes">Mes commandes</option>
+                        <option value="Question">Question sur un produit</option>
+                        <option value="Réclamation">Réclamation</option>
+                        <option value="Autres">Autres</option>
+                    </select><br>
+                    <label for="Question">Votre Question* : </label><textarea name="Question" id="Question" cols="20"
+                        rows="0" required></textarea>
+                </fieldset><br>
+                <label for="formulaire"></label><input type="checkbox" name="Formulaire" id="Formulaire"
+                    required>J'accepte le traintement informatique de ce formulaire. <br><br>
+                
+                <label for="Envoyer"></label><input type="submit" value="Envoyer" name="Envoyer" id="Envoyer">
+                <label for="Annuler"></label><input type="reset" value="Annuler" name="Annuler" id="Annuler">
+            </form>
+        </article>
+    </section>
+    <aside>
+
+    </aside>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
